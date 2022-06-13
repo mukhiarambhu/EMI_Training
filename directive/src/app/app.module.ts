@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { RatingPipe } from './rating.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    RatingPipe
-    
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    Ng2SearchPipeModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
