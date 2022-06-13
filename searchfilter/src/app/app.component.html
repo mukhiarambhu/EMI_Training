@@ -1,25 +1,37 @@
-<div>
-  <input type="text" name="search" id="" [(ngModel)]="search" placeholder="Enter your Search">
-</div>
-<div>
-  <table>
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Company</th>
-        <th >City</th>
-        <th>Angular Rating</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let data of datas | filter:search">
-        <td>{{data.id}}</td>
-        <td>{{data.name}}</td>
-        <td>{{data.company}}</td>
-        <td style="margin-left:20px">{{data.city}}</td>
-        <td>{{data.angularProfency | rating}}</td>
-      </tr>
-    </tbody>
-  </table>
+<app-navbar></app-navbar>
+
+<div style="display: flex; flex-direction: column; align-items: center">
+  <h1 class="content is-medium">Angular Ng2-Search</h1 >
+  <div>
+    <input
+      type="text"
+      name="search"
+      id=""
+      [(ngModel)]="search"
+      placeholder="Enter your Search"
+      style="margin-top: 50px; width: 350px"
+    />
+  </div>
+  <div style="margin-top: 20px">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>City</th>
+          <th>Angular Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of datas | filter: search">
+          <td>{{ data.id }}</td>
+          <td>{{ data.name }}</td>
+          <td>{{ data.company }}</td>
+          <td style="margin-left: 20px">{{ data.city }}</td>
+          <td>{{ data.angularProfency | rating }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
