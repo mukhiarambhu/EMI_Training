@@ -1,0 +1,8 @@
+#linkdiv{
+    margin-top:10px;
+    margin-left: 150px;
+}
+#linkdiv a{
+    color: red;
+    text-decoration: dotted;
+}
