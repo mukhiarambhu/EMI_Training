@@ -1,0 +1,26 @@
+[
+    {
+        "employeeId":1,
+        "employeeName":"Ayesha",
+        "projectId":100,
+        "angularProficiency":4.0
+    },
+    {
+        "employeeId":2,
+        "employeeName":"Abhinav",
+        "projectId":101,
+        "angularProficiency":4.5
+    },
+    {
+        "employeeId":3,
+        "employeeName":"Anurag",
+        "projectId":102,
+        "angularProficiency":3.5
+    },
+    {
+        "employeeId":4,
+        "employeeName":"Rushikesh",
+        "projectId":103,
+        "angularProficiency":4.2
+    }
+]

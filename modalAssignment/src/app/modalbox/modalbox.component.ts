@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { BookServiceService } from '../services/book-service.service';
+import {MatDialogRef} from '@angular/material/dialog'
 @Component({
   selector: 'app-modalbox',
   templateUrl: './modalbox.component.html',
   styleUrls: ['./modalbox.component.css'],
 })
 export class ModalboxComponent implements OnInit {
-  constructor(public dialog: MatDialog ,private formBuilder:FormBuilder) {}
+  constructor(public dialog: MatDialog ,private formBuilder:FormBuilder, private bookService:BookServiceService,private dialogeRef:MatDialogRef<ModalboxComponent>) {}
   bookForm!: FormGroup;
 
   ngOnInit(): void {
@@ -27,6 +29,16 @@ export class ModalboxComponent implements OnInit {
     });
   }
   addBook(){
-    console.log(this.bookForm.value)
+   if(this.bookForm.valid){
+    this.bookService.postBook(this.bookForm.value).subscribe({
+      next:(res)=>{
+        alert('Book Has been Added Successfully')
+        this.bookForm.reset()
+        this.dialogeRef.close('save')
+      },error:()=>{
+        alert('Error! Fill details Correctly')
+      }
+    })
+   }
   }
 }

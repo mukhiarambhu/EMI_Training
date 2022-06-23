@@ -1,19 +1,20 @@
 {
-  "posts": [
+  "bookList": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "bookName": "The Fault in Our Stars",
+      "authorName": "John Green",
+      "bookCategory": "fiction",
+      "bookQuantity": 15,
+      "description": "Seventeen-year-old Hazel Grace Lancaster reluctantly attends a cancer patients' support group at her mother’s behest. Because of her cancer, she uses a portable oxygen tank to breathe properly. In one of the meetings she catches the eye of a teenage boy, and through the course of the meeting she learns the boy’s name is Augustus Waters. He's there to support their mutual friend, Isaac",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "bookName": "The Alchemist",
+      "authorName": "Paulo Coelho",
+      "bookCategory": "selfhelp",
+      "bookQuantity": 15,
+      "description": "An Andalusian shepherd boy named Santiago dreams of a treasure while in a ruined church. He consults a Gypsy fortune-teller about the meaning of the recurring dream. The woman interprets it as a prophecy, telling the boy that he will discover a treasure at the Egyptian pyramids.",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

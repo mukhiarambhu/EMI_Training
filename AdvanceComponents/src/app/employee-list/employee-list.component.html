@@ -1,0 +1,18 @@
+<table class="table" *ngIf="employee.length">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Employee ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Project Id</th>
+        <th scope="col">Preficiency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employee;let i=index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{emp.employeeName}}</td>
+        <td>{{emp.projectId}}</td>
+        <td>{{emp.angularProficiency}}</td>
+      </tr>
+    </tbody>
+  </table>

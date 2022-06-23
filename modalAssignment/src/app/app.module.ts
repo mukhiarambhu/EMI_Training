@@ -7,6 +7,7 @@ import { AngularmaterialModule } from './AngularMaterial/angularmaterial/angular
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ModalboxComponent } from './modalbox/modalbox.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent, NavbarComponent, ModalboxComponent],
   imports: [
@@ -14,7 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     AngularmaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
