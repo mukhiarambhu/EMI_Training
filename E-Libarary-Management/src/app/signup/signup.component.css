@@ -1,0 +1,126 @@
+.mat-card {
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+.leftDiv {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rightDiv {
+  width: 40%;
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsla(229, 78%, 68%, 1);
+
+  background: linear-gradient(
+    180deg,
+    hsla(229, 78%, 68%, 1) 0%,
+    hsla(286, 44%, 49%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(229, 78%, 68%, 1) 0%,
+    hsla(286, 44%, 49%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(229, 78%, 68%, 1) 0%,
+    hsla(286, 44%, 49%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6D85ED", endColorstr="#9946B2", GradientType=1 );
+}
+.mat-card-title {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.mat-card-subtitle {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.social-meida-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-meida-div > img {
+  width: 45px;
+  margin-right: 5%;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+h3:before {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 1px;
+  position: absolute;
+  background: black;
+  top: 45%;
+  left: 0px;
+}
+h3:after {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 1px;
+  position: absolute;
+  background: black;
+  right: 0px;
+  top: 45%;
+}
+.email-signup-div,
+.signin-button-div,
+.social-meida-div,
+.divider-div {
+  width: 60%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.signin-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-raised-button {
+  width: 80%;
+  margin-top: 15px;
+}
+.rightDiv > h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+}
+.rightDiv >p{
+    color: white;
+}
+.rightDiv >p:nth-child(3){
+    margin-top: -10px;
+}
+.rightDiv>button{
+    width: 50%;
+    border-radius: 5%;
+    
+}

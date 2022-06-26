@@ -1,0 +1,11 @@
+.example-spacer {
+  display: flex;
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+.example-spacer > span {
+  margin-right: 10px;
+}
