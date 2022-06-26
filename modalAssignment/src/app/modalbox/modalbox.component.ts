@@ -21,7 +21,6 @@ export class ModalboxComponent implements OnInit {
       description:['',Validators.required],
     })
   }
-
   openDialog() {
     const dialogRef = this.dialog.open(ModalboxComponent);
     dialogRef.afterClosed().subscribe((result) => {

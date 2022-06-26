@@ -15,6 +15,46 @@
       "bookQuantity": 15,
       "description": "An Andalusian shepherd boy named Santiago dreams of a treasure while in a ruined church. He consults a Gypsy fortune-teller about the meaning of the recurring dream. The woman interprets it as a prophecy, telling the boy that he will discover a treasure at the Egyptian pyramids.",
       "id": 2
+    },
+    {
+      "bookName": "The Great Gatsby",
+      "authorName": "F. Scott Fitzgerald",
+      "bookCategory": "thriller",
+      "bookQuantity": 22,
+      "description": "he Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan.",
+      "id": 3
+    },
+    {
+      "bookName": "To Kill a Mockingbird",
+      "authorName": "Harper lee",
+      "bookCategory": "motivitational",
+      "bookQuantity": 23,
+      "description": "o Kill a Mockingbird is a novel by the American author Harper Lee. It was published in 1960 and was instantly successful. In the United States, it is widely read in high schools and middle schools.",
+      "id": 4
+    },
+    {
+      "bookName": "Broken Glass",
+      "authorName": "Alain Mabanckou",
+      "bookCategory": "fiction",
+      "bookQuantity": 13,
+      "description": "The Congolese writer says he was “trying to break the French language” with Broken Glass – a black comedy told by a disgraced teacher without much in the way of full stops or paragraph breaks",
+      "id": 5
+    },
+    {
+      "bookName": "A Little Life",
+      "authorName": "Hanya Yanagihara",
+      "bookCategory": "autobiography",
+      "bookQuantity": 29,
+      "description": "This operatically harrowing American gay melodrama became an unlikely bestseller, and one of the most divisive novels of the century so far. One man’s life is blighted by abuse and its aftermath, but also illuminated by love and friendship",
+      "id": 6
+    },
+    {
+      "bookName": "The Tipping Point",
+      "authorName": "Malcolm Gladwel",
+      "bookCategory": "motivitational",
+      "bookQuantity": 56,
+      "description": "The New Yorker staff writer examines phenomena from shoe sales to crime rates through the lens of epidemiology, reaching his own tipping point, when he became a rock-star intellectual and unleashed a wave of quirky studies of contemporary society. ",
+      "id": 7
     }
   ]
 }
