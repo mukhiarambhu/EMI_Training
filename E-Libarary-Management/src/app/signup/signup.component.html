@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <mat-card>
   <div class="leftDiv">
     <mat-card-title>Login to Your Account</mat-card-title>
@@ -21,13 +22,13 @@
       </mat-form-field>
     </div>
     <div class="signin-button-div">
-        <button mat-raised-button color="warn">Sign In</button>
+        <button (click)="directToDashboard()" mat-raised-button color="warn">Sign In</button>
     </div>
   </div>
   <div class="rightDiv">
     <h1>New Here ?</h1>
     <p>Sign Up and discover a great</p>
     <p>amount of new opportunity</p>
-    <button mat-raised-button color="warn">Sign Up</button>
+    <button (click)="directToDashboard()" mat-raised-button color="warn">Sign Up</button>
   </div>
 </mat-card>

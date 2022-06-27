@@ -7,12 +7,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AngularMaterialModule } from './angularMaterial/angular-material/angular-material.module';
 import { SignupComponent } from './signup/signup.component';
+import { UserPageComponent } from './user-page/user-page.component';
+import { TrendingbooksComponent } from './trendingbooks/trendingbooks.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SignupComponent
+    SignupComponent,
+    UserPageComponent,
+    TrendingbooksComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

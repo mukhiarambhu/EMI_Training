@@ -1,7 +1,9 @@
 .mat-card {
-  width: 60%;
+  width: 70%;
   margin: auto;
   display: flex;
+  margin-top: 100px;
+  border: 1px solid indigo;
 }
 
 .leftDiv {
