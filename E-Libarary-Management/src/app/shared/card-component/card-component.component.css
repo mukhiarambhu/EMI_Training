@@ -1,34 +1,39 @@
-h1{
+h1 {
     text-decoration: underline;
     margin-left: 10px;
     margin-bottom: 0px;
-}
-.mainDiv{
+  }
+  .mainDiv {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.example-card {
-    max-width: 250px;
+    /* max-width: 90%; */
+    
+  }
+  .example-card {
+    width: 240px;
+    margin-top: 10px;
   }
   
-  .mat-card-header-text{
+  .mat-card-header-text {
     margin: 0px 0px !important;
     text-align: left;
   }
-  .mat-card-actions{
+  .mat-card-actions {
     display: flex;
     justify-content: center;
   }
   
-
-  .issueButton{
+  .issueButton {
     width: 140px;
+    
   }
-  .book-image{
-    height: 320px;
+  .book-image {
+    height: 140px;
+    width: 120px;
+    margin-left: 5px;
   }
-  .mat-card-content{
-    height: 160px;
+  .mat-card-subtitle:nth-child(3) {
+    margin-top: -15px;
   }

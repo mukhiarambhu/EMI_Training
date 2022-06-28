@@ -8,8 +8,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AngularMaterialModule } from './angularMaterial/angular-material/angular-material.module';
 import { SignupComponent } from './signup/signup.component';
 import { UserPageComponent } from './user-page/user-page.component';
-import { TrendingbooksComponent } from './trendingbooks/trendingbooks.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { DropdownUserComponent } from './shared/dropdown-user/dropdown-user.component';
+import { DividerComponent } from './shared/divider/divider.component';
+import { CardComponentComponent } from './shared/card-component/card-component.component';
 
 @NgModule({
   declarations: [
@@ -17,17 +19,18 @@ import { HomePageComponent } from './home-page/home-page.component';
     NavbarComponent,
     SignupComponent,
     UserPageComponent,
-    TrendingbooksComponent,
-    HomePageComponent
+    HomePageComponent,
+    DropdownUserComponent,
+    DividerComponent,
+    CardComponentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-  
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
