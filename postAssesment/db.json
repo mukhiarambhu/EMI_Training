@@ -173,14 +173,6 @@
       "id": 15
     },
     {
-      "bookName": "Beloved",
-      "authorName": "Toni Morrison",
-      "bookCategory": "fiction",
-      "bookQuantity": 31,
-      "bookImage": "https://m.media-amazon.com/images/I/41Yu-fXzDPL.jpg",
-      "id": 16
-    },
-    {
       "bookName": "Gone Girl",
       "authorName": "Gillian Flynn",
       "bookCategory": "thriller",

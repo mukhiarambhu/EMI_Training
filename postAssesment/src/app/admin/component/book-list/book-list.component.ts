@@ -55,7 +55,11 @@ export class BookListComponent implements OnInit {
   }
 
 
-  deleteBook(){
-console.log('delete')
+  deleteBook(val:any){
+   this.bookService.deleteBook(val.id).subscribe({
+    next:(res)=>{
+      alert('Book has been deleted')
+    }
+   })
   }
 }

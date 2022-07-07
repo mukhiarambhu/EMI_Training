@@ -30,7 +30,7 @@
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Edit/Delete</th>
           <td mat-cell *matCellDef="let row">
             <mat-icon (click)="openDialog(row)">edit</mat-icon>
-            <mat-icon (click)="deleteBook()">delete</mat-icon>
+            <mat-icon (click)="deleteBook(row)">delete</mat-icon>
           </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
