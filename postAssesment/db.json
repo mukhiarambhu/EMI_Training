@@ -9,7 +9,39 @@
       "role": "admin",
       "bookIssued": [],
       "id": 1
+    },
+    {
+      "UserName": "Rahul",
+      "emailId": "rahul@google.com",
+      "password": "8888885439",
+      "number": "8888885439",
+      "gender": "male",
+      "role": "user",
+      "bookIssued": [],
+      "id": 2
+    },
+    {
+      "UserName": "Isha",
+      "emailId": "Isha@google.com",
+      "password": "4477665439",
+      "number": "8888839562",
+      "gender": "female",
+      "role": "user",
+      "bookIssued": [],
+      "id": 3
+    },
+    {
+      "UserName": "Ashwathi",
+      "emailId": "ashwathi@google.com",
+      "password": "2299776633",
+      "number": "5439564879",
+      "gender": "female",
+      "role": "user",
+      "bookIssued": [],
+      "id": 4
     }
+    
+
   ],
   "books": [
     {
@@ -95,10 +127,9 @@
     {
       "bookName": "Don Quixote",
       "authorName": "Miguel de Cervantes",
-      "bookImage":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546112331l/3836.jpg",
+      "bookImage": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546112331l/3836.jpg",
       "bookCategory": "fiction",
       "bookQuantity": 22,
-
       "id": 11
     },
     {
@@ -107,38 +138,39 @@
       "bookImage": "https://m.media-amazon.com/images/I/51UJsfRHTRL.jpg",
       "bookCategory": "selfhelp",
       "bookQuantity": 65,
-
       "id": 12
     },
     {
       "bookName": "Treasure Island",
       "authorName": "Robert Louis",
-      "bookImage":
-        "https://m.media-amazon.com/images/I/61Nvv+LTdeL.jpg",
+      "bookImage": "https://m.media-amazon.com/images/I/61Nvv+LTdeL.jpg",
       "bookCategory": "thriller",
       "bookQuantity": 72,
-     
       "id": 13
     },
     {
       "bookName": "Ivanhoe",
       "authorName": "Walter Scott",
-      "bookImage":
-        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589480142l/6440.jpg",
+      "bookImage": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589480142l/6440.jpg",
       "bookCategory": "motivitational",
       "bookQuantity": 33,
-    
       "id": 14
     },
     {
       "bookName": "Hatchet",
       "authorName": "Gary Paulsen",
-      "bookImage":
-        "https://m.media-amazon.com/images/I/61FbXZT3CBL.jpg",
+      "bookImage": "https://m.media-amazon.com/images/I/61FbXZT3CBL.jpg",
       "bookCategory": "fiction",
       "bookQuantity": 19,
-      
       "id": 15
+    },
+    {
+      "bookName": "Beloved",
+      "authorName": "Toni Morrison",
+      "bookCategory": "fiction",
+      "bookQuantity": 31,
+      "bookImage": "https://m.media-amazon.com/images/I/41Yu-fXzDPL.jpg",
+      "id": 16
     }
   ],
   "profile": {

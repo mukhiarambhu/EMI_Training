@@ -16,6 +16,10 @@ import { UserLandingComponent } from './user/component/user-landing/user-landing
 import { BookCardComponent } from './user/component/book-card/book-card.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { UserInfoDropdownComponent } from './user/component/user-info-dropdown/user-info-dropdown.component';
+import { AddBookComponent } from './admin/component/add-book/add-book.component';
+import { UserListComponent } from './admin/component/user-list/user-list.component';
+import { RequestedBookListComponent } from './admin/component/requested-book-list/requested-book-list.component';
+import { BookListComponent } from './admin/component/book-list/book-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,11 @@ import { UserInfoDropdownComponent } from './user/component/user-info-dropdown/u
     DashboardComponent,
     UserLandingComponent,
     BookCardComponent,
-    UserInfoDropdownComponent
+    UserInfoDropdownComponent,
+    AddBookComponent,
+    UserListComponent,
+    RequestedBookListComponent,
+    BookListComponent
   ],
   imports: [
     BrowserModule,

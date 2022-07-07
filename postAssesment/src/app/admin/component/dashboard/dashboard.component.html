@@ -1,1 +1,27 @@
-<p>dashboard works!</p>
+<app-navbar>
+    <app-user-info-dropdown></app-user-info-dropdown>
+</app-navbar>
+<mat-card class="mainDiv">
+    <mat-card class="optionDiv" (click)="openDialog()">
+        <mat-icon>add</mat-icon>
+        <h2>ADD BOOK</h2>
+    </mat-card>
+    <mat-card class="optionDiv" (click)="routePath()">
+        <mat-icon>group</mat-icon>
+        <h2>USERS</h2>
+    </mat-card>
+    <mat-card class="optionDiv">
+        <mat-icon><span class="material-symbols-outlined">
+            menu_book
+            </span></mat-icon>
+        <h2>REQUESTED BOOKS</h2>
+    </mat-card>
+    <mat-card class="optionDiv" routerLink="/booklist">
+        <mat-icon><span class="material-symbols-outlined">
+            auto_stories
+            </span></mat-icon>
+        <h2>ALL BOOKS</h2>
+    </mat-card>
+   
+</mat-card>
+<router-outlet></router-outlet>
