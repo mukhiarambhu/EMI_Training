@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "UserName": "Rambhu",
+      "emailId": "mukhiarambhu@yahoo.in",
+      "password": "7276808149",
+      "number": 7276808149,
+      "gender": "male",
+      "role": "admin",
+      "bookIssued": [],
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>Enter Details To Login</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="loginData">
+      <mat-form-field appearance="legacy">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter your emailId" formControlName="emailId" />
+      </mat-form-field>
+      <mat-form-field appearance="legacy">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Enter your Password" formControlName="password"/>
+      </mat-form-field>
+      <button class="submit" type="submit" (click)="validateUser()">Login</button>
+    </form>
+  </mat-card-content>
+  <mat-card-footer (click)="openDialog()"
+    >Don't Have Account ?<span>Sign Up!!</span></mat-card-footer
+  >
+</mat-card>

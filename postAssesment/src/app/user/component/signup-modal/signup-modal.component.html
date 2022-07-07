@@ -1,0 +1,45 @@
+<mat-card>
+  <mat-card-title>Fill Details for SignUp</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="userForm">
+      <mat-form-field appearance="legacy">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="enter your name" formControlName="UserName" />
+      </mat-form-field>
+      <mat-form-field appearance="legacy">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="enter your email"
+          formControlName="emailId"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="legacy">
+        <mat-label>Password</mat-label>
+        <input matInput  placeholder="Enter your Password"
+        formControlName="password"/>
+      </mat-form-field>
+      <mat-form-field appearance="legacy">
+        <mat-label>Contact Number</mat-label>
+        <input
+          matInput
+          type="number"
+          class="example-right-align"
+          placeholder="enter your mobile number"
+          formControlName="number"
+        />
+      </mat-form-field>
+      <div>
+        <label>Gender: </label>
+        <mat-radio-group formControlName="gender">
+          <mat-radio-button value="male">Male</mat-radio-button>
+          <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <button class="submit" type="submit" (click)="addUsers()">SignUp</button>
+    </form>
+  </mat-card-content>
+  <mat-card-footer><a (click)="openDialog()">Have a account?<span>Login</span></a></mat-card-footer
+  >
+</mat-card>

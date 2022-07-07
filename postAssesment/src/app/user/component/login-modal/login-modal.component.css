@@ -1,0 +1,38 @@
+
+.mat-form-field{
+    width: 100%;
+}
+mat-card{
+    height: 300px;
+   padding: 60px;
+}
+mat-card-title{
+   
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.submit{
+    margin-top: 15px;
+    width: 280px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(127, 35, 193);
+    color: white;
+    border: none;
+}
+.submit:hover{
+cursor: pointer;
+}
+.mat-card-footer{
+    margin-left: 0px;
+}
+span{
+    color: red;
+    margin-bottom: 20px;
+}
+mat-card-footer:hover{
+    cursor: pointer;
+}
+/* .mat-card-footer{
+    margin-bottom: 25px;
+} */

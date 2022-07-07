@@ -1,0 +1,31 @@
+.mat-form-field{
+    width: 100%;
+}
+mat-card-title{
+    margin-bottom: 20px;
+}
+
+.submit{
+    margin-top: 15px;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(127, 35, 193);
+    color: white;
+    border: none;
+}
+.mat-card-footer a{
+    margin-left: 16px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+span{
+    color: red;
+    margin-bottom: 20px;
+}
+a:hover{
+    cursor: pointer;
+}
+.mat-card-footer{
+    margin-bottom: 25px;
+}
