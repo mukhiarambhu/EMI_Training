@@ -4,3 +4,15 @@ mat-card{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.searchDiv{
+ margin-top: -60px;
+ margin-left: 25px;
+ margin-bottom: -10px;
+
+}
+.searchDiv input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+}

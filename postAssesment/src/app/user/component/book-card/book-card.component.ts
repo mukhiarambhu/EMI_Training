@@ -8,6 +8,7 @@ import { Component, OnInit,Input } from '@angular/core';
 export class BookCardComponent implements OnInit {
   @Input()
   bookData!: any;
+  @Input() searchTerm!:string
   constructor() { }
 
   ngOnInit(): void {

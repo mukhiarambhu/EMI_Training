@@ -8,6 +8,7 @@ import { BookServiceService } from 'src/app/shared/service/book.service';
 export class UserLandingComponent implements OnInit {
   constructor(private bookService: BookServiceService) {}
   bookData!: any;
+  search!: string;
   ngOnInit(): void {
     this.getAllBook()
   }

@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './admin/component/dashboard/dashboard.component';
 import { UserLandingComponent } from './user/component/user-landing/user-landing.component';
 import { BookCardComponent } from './user/component/book-card/book-card.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { UserInfoDropdownComponent } from './user/component/user-info-dropdown/user-info-dropdown.component';
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { UserInfoDropdownComponent } from './user/component/user-info-dropdown/u
     BrowserAnimationsModule,
     AngularMaterialModule,
     HttpClientModule,
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule,Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
