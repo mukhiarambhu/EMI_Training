@@ -20,3 +20,6 @@ button{
 button:hover{
     cursor: pointer;
 }
+.mat-icon{
+    margin-right: 10px;
+}

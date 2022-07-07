@@ -31,7 +31,7 @@ export class SignupModalComponent implements OnInit {
     if(this.userForm.valid){
       this.userService.postUser(this.userForm.value).subscribe({
         next:(res)=>{
-          alert('Book has been Added Successfully')
+          alert('New User has been Added ')
           this.userForm.reset()
           this.dialogeRef.close('save')
         },error:()=>{

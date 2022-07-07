@@ -39,9 +39,17 @@
       "role": "user",
       "bookIssued": [],
       "id": 4
+    },
+    {
+      "UserName": "Rushikesh",
+      "emailId": "rushikeshy@gmail.com",
+      "password": "789456",
+      "number": 1231234564,
+      "gender": "male",
+      "role": "user",
+      "bookIssued": [],
+      "id": 5
     }
-    
-
   ],
   "books": [
     {
@@ -49,7 +57,7 @@
       "authorName": "John Green",
       "bookImage": "https://upload.wikimedia.org/wikipedia/en/4/41/The_Fault_in_Our_Stars_%28Official_Film_Poster%29.png",
       "bookCategory": "fiction",
-      "bookQuantity": 15,
+      "bookQuantity": 20,
       "id": 1
     },
     {
@@ -171,6 +179,14 @@
       "bookQuantity": 31,
       "bookImage": "https://m.media-amazon.com/images/I/41Yu-fXzDPL.jpg",
       "id": 16
+    },
+    {
+      "bookName": "Gone Girl",
+      "authorName": "Gillian Flynn",
+      "bookCategory": "thriller",
+      "bookQuantity": 11,
+      "bookImage": "https://images-na.ssl-images-amazon.com/images/I/71DrHgpX3YL.jpg",
+      "id": 17
     }
   ],
   "profile": {

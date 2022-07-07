@@ -3,14 +3,16 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { BookServiceService } from 'src/app/shared/service/book.service';
-
+import { MatDialog } from '@angular/material/dialog'; 
+import { AddBookComponent } from '../add-book/add-book.component';
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
   styleUrls: ['./book-list.component.css'],
 })
 export class BookListComponent implements OnInit {
-  constructor(public bookService: BookServiceService) {}
+  showFiller = false;
+  constructor(public bookService: BookServiceService,public dialog:MatDialog) {}
 
   bookData: any;
   displayedColumns: string[] = [
@@ -18,6 +20,7 @@ export class BookListComponent implements OnInit {
     'authorName',
     'bookCategory',
     'bookQuantity',
+    'action'
   ];
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -26,17 +29,33 @@ export class BookListComponent implements OnInit {
   ngOnInit(): void {
     this.getAllBook();
   }
+
+  openDialog( row:any) {
+  this.dialog.open(AddBookComponent,{data:row})
+  
+  //  this.bookService.getBookById(row).subscribe(res=>{
+  //   console.log(res)
+  //  })
+    // dialogRef.afterClosed().subscribe(val=>{
+    //   console.log(val)
+    // });
+  }
   public getAllBook() {
     this.bookService.getBook().subscribe({
       next: (res) => {
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-        console.log(res);
+        // console.log(res);
       },
       error: () => {
         alert('oops! Error Occured');
       },
     });
+  }
+
+
+  deleteBook(){
+console.log('delete')
   }
 }
