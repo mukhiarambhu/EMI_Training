@@ -1,0 +1,44 @@
+h1 {
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+  .mainDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* max-width: 90%; */
+    
+    
+  }
+ 
+  .example-card {
+    width: 240px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+     
+  }
+  
+  .mat-card-header-text {
+    margin: 0px 0px !important;
+    text-align: left;
+  }
+  .mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .issueButton {
+    width: 140px;
+    
+  }
+  .book-image {
+    height: 140px;
+    width: 120px;
+    margin-left: 5px;
+  }
+  .mat-card-subtitle:nth-child(3) {
+    margin-top: -15px;
+  }

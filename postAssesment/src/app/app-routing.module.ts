@@ -6,10 +6,10 @@ import { UserLandingComponent } from './user/component/user-landing/user-landing
 import { AuthguardGuard } from './authguard.guard';
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
-  {path:'user',component:UserLandingComponent,canActivate:[AuthguardGuard]},
-  {path:'admin',component:DashboardComponent,canActivate:[AuthguardGuard]}
+  {path:'user',component:UserLandingComponent,},
+  {path:'admin',component:DashboardComponent}
 ];
-
+//canActivate:[AuthguardGuard]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

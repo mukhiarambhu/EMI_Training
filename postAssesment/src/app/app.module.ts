@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './admin/component/dashboard/dashboard.component';
 import { UserLandingComponent } from './user/component/user-landing/user-landing.component';
+import { BookCardComponent } from './user/component/book-card/book-card.component';
+import { UserInfoDropdownComponent } from './user/component/user-info-dropdown/user-info-dropdown.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { UserLandingComponent } from './user/component/user-landing/user-landing
     LoginModalComponent,
     SignupModalComponent,
     DashboardComponent,
-    UserLandingComponent
+    UserLandingComponent,
+    BookCardComponent,
+    UserInfoDropdownComponent
   ],
   imports: [
     BrowserModule,
