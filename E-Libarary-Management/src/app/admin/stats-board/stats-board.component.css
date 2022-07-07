@@ -1,0 +1,28 @@
+.mainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cardDiv{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.cardDiv h1{
+    font-size: 35px;
+}
+.cardDiv h3{
+font-size: 20px;
+font-weight: 500;
+margin-top: -10px;
+}
+.cardDiv:nth-child(even){
+    background-color: rgb(101, 55, 144);
+    
+}
+.cardDiv:nth-child(odd){
+    background-color: rgb(33, 33, 135);
+}

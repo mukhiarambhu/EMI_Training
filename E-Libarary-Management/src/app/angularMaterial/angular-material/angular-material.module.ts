@@ -10,9 +10,15 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 @NgModule({
   declarations: [],
   imports: [CommonModule],
-  exports:[MatToolbarModule,MatIconModule,MatCardModule,MatInputModule,MatButtonModule,MatSelectModule,MatDialogModule,MatMenuModule,MatDividerModule,MatListModule]
+  exports:[MatToolbarModule,MatIconModule,MatCardModule,MatInputModule,MatButtonModule,MatSelectModule,MatDialogModule,MatMenuModule,MatDividerModule,MatListModule,MatSidenavModule,MatButtonToggleModule,MatTabsModule,MatTableModule,MatPaginatorModule]
 })
 export class AngularMaterialModule {}

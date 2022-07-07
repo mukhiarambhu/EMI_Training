@@ -10,10 +10,13 @@ h1 {
     justify-content: space-around;
     /* max-width: 90%; */
     
+    
   }
+ 
   .example-card {
     width: 240px;
     margin-top: 10px;
+    
   }
   
   .mat-card-header-text {

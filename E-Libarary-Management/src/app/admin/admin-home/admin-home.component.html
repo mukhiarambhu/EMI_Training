@@ -1,0 +1,55 @@
+
+<mat-drawer-container class="example-container">
+  <mat-drawer class="leftdrawer" mode="side" opened>
+    <div class="profilepicDiv">
+      <img src="assets\image\1635493448817.jpg" alt="" />
+      <h2>Rambhu Mukhia</h2>
+      <h4>Admin</h4>
+    </div>
+    <hr />
+    <div class="optionDIv">
+      <div class="optionName" routerLink="./dashboard" >
+        <div>
+          <mat-icon>dashboard</mat-icon>
+          <h2 class="optionTitle">dashboard</h2>
+        </div>
+      </div>
+      <div class="optionName" routerLink="./totalbooks">
+        <div>
+          <mat-icon>auto_stories</mat-icon>
+          <h2 class="optionTitle">Books</h2>
+        </div>
+      </div>
+      <div class="optionName" routerLink="./issuedbooks">
+        <div>
+          <mat-icon>menu_book</mat-icon>
+          <h2 class="optionTitle">Issued Books</h2>
+        </div>
+      </div>
+
+      <div class="optionName" routerLink="./requestedbook">
+        <div>
+          <mat-icon>bookmark_add</mat-icon>
+          <h2 class="optionTitle">Requested Books</h2>
+        </div>
+      </div>
+      <div class="optionName" routerLink="./userlist">
+        <div>
+          <mat-icon>group</mat-icon>
+          <h2 class="optionTitle">Users</h2>
+        </div>
+      </div>
+      <div class="optionName" routerLink="./setting">
+        <div>
+          <mat-icon>settings</mat-icon>
+          <h2 class="optionTitle">Settings</h2>
+        </div>
+      </div>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-stats-board></app-stats-board>
+   
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -55,6 +55,14 @@
       "bookQuantity": 56,
       "description": "The New Yorker staff writer examines phenomena from shoe sales to crime rates through the lens of epidemiology, reaching his own tipping point, when he became a rock-star intellectual and unleashed a wave of quirky studies of contemporary society. ",
       "id": 7
+    },
+    {
+      "bookName": "The trannie",
+      "authorName": "Mayura",
+      "bookCategory": "motivitational",
+      "bookQuantity": 23,
+      "description": "ffsddsjfsdfkfj",
+      "id": 8
     }
   ]
 }
