@@ -1,8 +1,9 @@
 <div class="main">
   <h1>List Of All Books</h1>
+
   <div class="container">
     <div class="mat-elevation-z8">
-      <table mat-table [dataSource]="dataSource" matSort>
+      <table mat-table [dataSource]="dataSource |filter:search" matSort>
         <!-- ID Column -->
         <ng-container matColumnDef="bookName">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Book</th>

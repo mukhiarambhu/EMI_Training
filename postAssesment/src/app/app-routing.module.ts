@@ -10,16 +10,16 @@ import { UserRequestedBookComponent } from './user/component/user-requested-book
 import { RequestedBookListComponent } from './admin/component/requested-book-list/requested-book-list.component';
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
-  {path:'user',component:UserLandingComponent,children:[
+  {path:'user',component:UserLandingComponent,canActivate:[AuthguardGuard],children:[
     
   ]},
-  {path:'admin',component:DashboardComponent,children:[
+  {path:'admin',component:DashboardComponent,canActivate:[AuthguardGuard],children:[
     
   ]},
-  {path:'userlist',component:UserListComponent},
-  {path:'booklist',component:BookListComponent},
-  {path:'userbooks',component:UserRequestedBookComponent},
-  {path:'requestedbooks',component:RequestedBookListComponent}
+  {path:'userlist',component:UserListComponent,canActivate:[AuthguardGuard]},
+  {path:'booklist',component:BookListComponent,canActivate:[AuthguardGuard]},
+  {path:'userbooks',component:UserRequestedBookComponent,canActivate:[AuthguardGuard]},
+  {path:'requestedbooks',component:RequestedBookListComponent,canActivate:[AuthguardGuard]}
   
 ];
 

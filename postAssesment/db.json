@@ -49,6 +49,16 @@
       "role": "user",
       "bookIssued": [],
       "id": 5
+    },
+    {
+      "UserName": "Aniket",
+      "emailId": "a@gmail.com",
+      "password": "123456",
+      "number": 8899665544,
+      "gender": "male",
+      "role": "user",
+      "bookIssued": [],
+      "id": 6
     }
   ],
   "books": [

@@ -5,6 +5,8 @@ import { MatSort } from '@angular/material/sort';
 import { BookServiceService } from 'src/app/shared/service/book.service';
 import { MatDialog } from '@angular/material/dialog'; 
 import { AddBookComponent } from '../add-book/add-book.component';
+
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
@@ -12,6 +14,7 @@ import { AddBookComponent } from '../add-book/add-book.component';
 })
 export class BookListComponent implements OnInit {
   showFiller = false;
+  search:string
   constructor(public bookService: BookServiceService,public dialog:MatDialog) {}
 
   bookData: any;
