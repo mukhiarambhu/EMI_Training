@@ -6,14 +6,20 @@ import { UserLandingComponent } from './user/component/user-landing/user-landing
 import { AuthguardGuard } from './authguard.guard';
 import { UserListComponent } from './admin/component/user-list/user-list.component';
 import { BookListComponent } from './admin/component/book-list/book-list.component';
+import { UserRequestedBookComponent } from './user/component/user-requested-book/user-requested-book.component';
+import { RequestedBookListComponent } from './admin/component/requested-book-list/requested-book-list.component';
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
-  {path:'user',component:UserLandingComponent},
+  {path:'user',component:UserLandingComponent,children:[
+    
+  ]},
   {path:'admin',component:DashboardComponent,children:[
     
   ]},
   {path:'userlist',component:UserListComponent},
-  {path:'booklist',component:BookListComponent}
+  {path:'booklist',component:BookListComponent},
+  {path:'userbooks',component:UserRequestedBookComponent},
+  {path:'requestedbooks',component:RequestedBookListComponent}
   
 ];
 

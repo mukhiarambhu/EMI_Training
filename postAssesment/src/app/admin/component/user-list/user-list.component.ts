@@ -33,7 +33,7 @@ export class UserListComponent implements OnInit {
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-        console.log(res)
+       
       },
       error: () => {
         alert('oops! Error Occured');

@@ -1,6 +1,6 @@
-<button mat-button [matMenuTriggerFor]="menu" #menuTrigger> <mat-icon>account_circle</mat-icon>Hello,Rambhu </button>
+<button mat-button [matMenuTriggerFor]="menu" #menuTrigger> <mat-icon>account_circle</mat-icon>Hello,{{name}} </button>
 <mat-menu #menu="matMenu">
   <button mat-menu-item >My Account</button>
-  <button mat-menu-item >My Book</button>
-  <button mat-menu-item >Logout</button>
+  <button mat-menu-item routerLink="/userbooks">My Book</button>
+  <button mat-menu-item (click)="logOut()">Logout</button>
 </mat-menu>

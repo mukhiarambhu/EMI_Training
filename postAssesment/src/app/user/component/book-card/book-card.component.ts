@@ -21,19 +21,28 @@ export class BookCardComponent implements OnInit {
   ngOnInit(): void {}
 
   getDetails(val: any) {
-    if(this.count<3){
+    if (this.count < 3) {
       this.bookService.getBookById(val).subscribe({
         next: (res) => {
           console.log(res);
           this.count++;
-         
+          if (this.count <= 3) {
+            this.setToLocalStorage(res);
+          }
         },
       });
-    }else{
+    } else {
       this.toastr.success('You cannot request more than 3 books', 'hello');
-     
     }
-    
   }
-  
+
+  setToLocalStorage(bookdetail: any) {
+    console.log('hello');
+    if (localStorage.getItem('requestedBook') == null) {
+      localStorage.setItem('requestedBook', JSON.stringify([]));
+    }
+    let localData = JSON.parse(localStorage.getItem('requestedBook'));
+    localData.push(bookdetail);
+    localStorage.setItem('requestedBook', JSON.stringify(localData));
+  }
 }

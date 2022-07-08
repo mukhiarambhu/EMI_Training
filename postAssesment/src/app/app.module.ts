@@ -21,6 +21,7 @@ import { UserListComponent } from './admin/component/user-list/user-list.compone
 import { RequestedBookListComponent } from './admin/component/requested-book-list/requested-book-list.component';
 import { BookListComponent } from './admin/component/book-list/book-list.component';
 import { ToastrModule } from 'ngx-toastr';
+import { UserRequestedBookComponent } from './user/component/user-requested-book/user-requested-book.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ToastrModule } from 'ngx-toastr';
     AddBookComponent,
     UserListComponent,
     RequestedBookListComponent,
-    BookListComponent
+    BookListComponent,
+    UserRequestedBookComponent
   ],
   imports: [
     BrowserModule,
