@@ -8,12 +8,12 @@ import { UserListComponent } from './admin/component/user-list/user-list.compone
 import { BookListComponent } from './admin/component/book-list/book-list.component';
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
-  {path:'user',component:UserLandingComponent,canActivate:[AuthguardGuard]},
-  {path:'admin',component:DashboardComponent,canActivate:[AuthguardGuard],children:[
+  {path:'user',component:UserLandingComponent},
+  {path:'admin',component:DashboardComponent,children:[
     
   ]},
-  {path:'userlist',component:UserListComponent,canActivate:[AuthguardGuard]},
-  {path:'booklist',component:BookListComponent,canActivate:[AuthguardGuard]}
+  {path:'userlist',component:UserListComponent},
+  {path:'booklist',component:BookListComponent}
   
 ];
 

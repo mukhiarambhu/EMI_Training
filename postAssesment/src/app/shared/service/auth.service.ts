@@ -6,12 +6,16 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AuthService {
+  name(name: any) {
+    throw new Error('Method not implemented.');
+  }
   users: any;
   isAuth = false;
   isAdmin = false;
   isUser = false;
   res: any;
   loginData: any;
+  requiredName:string | undefined
   constructor(private http: HttpClient, private router: Router) {}
 
   //to authincate user

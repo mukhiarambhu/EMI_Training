@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BookServiceService } from 'src/app/shared/service/book.service';
 @Component({
   selector: 'app-user-landing',
@@ -6,18 +7,22 @@ import { BookServiceService } from 'src/app/shared/service/book.service';
   styleUrls: ['./user-landing.component.css'],
 })
 export class UserLandingComponent implements OnInit {
-  constructor(private bookService: BookServiceService) {}
+  constructor(private bookService: BookServiceService,private active: ActivatedRoute,private route: Router,) {}
   bookData!: any;
   search!: string;
+  id!:number
   ngOnInit(): void {
     this.getAllBook()
+
   }
   getAllBook() {
     this.bookService.getBook().subscribe({
       next: (res) => {
         this.bookData = res;
-        console.log(this.bookData)
+        
       },
     });
   }
+
+ 
 }

@@ -1,18 +1,39 @@
-import { Component, OnInit,Input } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { BookServiceService } from 'src/app/shared/service/book.service';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-book-card',
   templateUrl: './book-card.component.html',
-  styleUrls: ['./book-card.component.css']
+  styleUrls: ['./book-card.component.css'],
 })
 export class BookCardComponent implements OnInit {
   @Input()
   bookData!: any;
-  @Input() searchTerm!:string
-  constructor() { }
+  @Input() searchTerm!: string;
+  count: number = 0;
 
-  ngOnInit(): void {
+  constructor(
+    private bookService: BookServiceService,
+    private toastr: ToastrService
+  ) {}
+
+  ngOnInit(): void {}
+
+  getDetails(val: any) {
+    if(this.count<3){
+      this.bookService.getBookById(val).subscribe({
+        next: (res) => {
+          console.log(res);
+          this.count++;
+         
+        },
+      });
+    }else{
+      this.toastr.success('You cannot request more than 3 books', 'hello');
+     
+    }
     
   }
-
+  
 }

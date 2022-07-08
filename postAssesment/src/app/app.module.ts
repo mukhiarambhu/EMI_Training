@@ -20,6 +20,8 @@ import { AddBookComponent } from './admin/component/add-book/add-book.component'
 import { UserListComponent } from './admin/component/user-list/user-list.component';
 import { RequestedBookListComponent } from './admin/component/requested-book-list/requested-book-list.component';
 import { BookListComponent } from './admin/component/book-list/book-list.component';
+import { ToastrModule } from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,7 @@ import { BookListComponent } from './admin/component/book-list/book-list.compone
     BrowserAnimationsModule,
     AngularMaterialModule,
     HttpClientModule,
-    FormsModule, ReactiveFormsModule,Ng2SearchPipeModule
+    FormsModule, ReactiveFormsModule,Ng2SearchPipeModule,ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
