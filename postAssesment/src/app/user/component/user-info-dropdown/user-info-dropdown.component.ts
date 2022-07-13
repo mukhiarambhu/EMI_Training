@@ -17,11 +17,12 @@ name!:string
   this.email=this.authService.loginData.emailId
     if(this.authService.isAuth){
       this.userService.getUsers().subscribe({
-        next:(res=>{
+        next:(res=>{ 
           res.map(el=>{
             if(el.emailId==this.email){
               this.userdata=el
               this.name=el.UserName
+              // console.log(el)
             
             }
           })

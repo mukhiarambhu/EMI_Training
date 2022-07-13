@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { AuthService } from 'src/app/shared/service/auth.service';
+import { UserService } from 'src/app/shared/service/user.service';
 @Component({
   selector: 'app-user-requested-book',
   templateUrl: './user-requested-book.component.html',
@@ -9,7 +11,8 @@ import { MatSort } from '@angular/material/sort';
 })
 export class UserRequestedBookComponent implements OnInit {
   requestedBookData: [];
-  constructor() {}
+  loggedInUserEmailId: string;
+  constructor(private authService: AuthService,private userService:UserService) {}
   displayedColumns: string[] = [
     'bookName',
     'authorName',
@@ -26,12 +29,18 @@ export class UserRequestedBookComponent implements OnInit {
   }
 
   getData() {
-    let bookDataFromStorage = JSON.parse(localStorage.getItem('requestedBook'));
-    // for(let i=bookDataFromStorage.length-1;i<bookDataFromStorage.length-4;i--){
-    //   console.log(bookDataFromStorage[i])
-    // }
-    this.dataSource = new MatTableDataSource(bookDataFromStorage);
-    // console.log(this.dataSource)
+   
+    this.loggedInUserEmailId = this.authService.loginData.emailId;
+    this.userService.getUsers().subscribe(res=>{
+     res.map(el=>{
+      if(el.emailId==this.loggedInUserEmailId){
+       
+       this.dataSource = new MatTableDataSource(el.bookIssued);
+       this.dataSource.paginator = this.paginator;
+       this.dataSource.sort = this.sort;
+      }
+     })
+    })
   }
 
   returnDate() {

@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BookServiceService } from 'src/app/shared/service/book.service';
 import { ToastrService } from 'ngx-toastr';
+import { AuthService } from 'src/app/shared/service/auth.service';
+import { UserService } from 'src/app/shared/service/user.service';
 @Component({
   selector: 'app-book-card',
   templateUrl: './book-card.component.html',
@@ -12,37 +14,58 @@ export class BookCardComponent implements OnInit {
   bookData!: any;
   @Input() searchTerm!: string;
   count: number = 0;
+  loggedInuserEmailId: string;
+  userData: any;
+  loggedInUserId: number;
+  bookrequested: any[] = [];
 
   constructor(
     private bookService: BookServiceService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private authService: AuthService,
+    private userService: UserService
   ) {}
 
-  ngOnInit(): void {}
-
-  getDetails(val: any) {
-    if (this.count < 3) {
-      this.bookService.getBookById(val).subscribe({
-        next: (res) => {
-          console.log(res);
-          this.count++;
-          if (this.count <= 3) {
-            this.setToLocalStorage(res);
-          }
-        },
-      });
-    } else {
-      this.toastr.success('You cannot request more than 3 books', 'hello');
-    }
+  ngOnInit(): void {
+    this.getUserInfo();
   }
 
-  setToLocalStorage(bookdetail: any) {
-    console.log('hello');
-    if (localStorage.getItem('requestedBook') == null) {
-      localStorage.setItem('requestedBook', JSON.stringify([]));
+
+
+  getDetails(val: any) {
+    if(this.userData.bookIssued.length<3){
+      this.bookService.getBookById(val).subscribe((res) => {
+        this.bookrequested.push(res);
+        this.userService.getUsersById(this.loggedInUserId).subscribe((res) => {
+          this.userData.bookIssued = this.bookrequested;
+          this.updateUser(this.loggedInUserId, this.userData);
+        });
+      });
+    }else{
+      this.toastr.success('You cannot request more than 3 books', `Hello,${this.userData.UserName}`);
     }
-    let localData = JSON.parse(localStorage.getItem('requestedBook'));
-    localData.push(bookdetail);
-    localStorage.setItem('requestedBook', JSON.stringify(localData));
+   
+  }
+
+  getUserInfo() {
+    // console.log(this.authService.loginData, 'id');
+    this.loggedInuserEmailId = this.authService.loginData.emailId;
+
+    this.userService.getUsers().forEach((res) => {
+      res.map((el) => {
+        if (el.emailId == this.loggedInuserEmailId) {
+          this.userData = el;
+          this.loggedInUserId = el.id;
+          // console.log(this.userData);
+          // console.log(this.loggedInUserId);
+        }
+      });
+    });
+  }
+
+  updateUser(id: any, data: any) {
+    this.userService.updateUser(id, data).subscribe((res) => {
+      // console.log(res);
+    });
   }
 }

@@ -35,7 +35,7 @@ export class LoginModalComponent implements OnInit {
     const dialogRef = this.dialog.open(SignupModalComponent);
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
+      // console.log(`Dialog result: ${result}`);
     });
   }
 }

@@ -10,7 +10,7 @@ interface usersModel{
   number:number,
   gender:string,
   role:string,
-  bookedIssued:number
+  bookIssued:any[]
 }
 
 @Injectable({
@@ -27,4 +27,12 @@ export class UserService {
   public getUsers():Observable<usersModel[]>{
     return this.http.get<usersModel[]>('http://localhost:3000/users')
   }
+  public getUsersById(id:number):Observable<usersModel>{
+    return this.http.get<usersModel>(`http://localhost:3000/users/${id}`)
+  }
+
+  public updateUser(id:any,data:any):Observable<usersModel>{
+    return this.http.patch<usersModel>(`http://localhost:3000/users/${id}`,data)
+  }
+ 
 }

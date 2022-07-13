@@ -19,7 +19,7 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) {}
 
   //to authincate user
-  public authenticateUser(data: any) {
+  public authenticateUser(data: any) { 
     return this.http.get('http://localhost:3000/users').subscribe((res) => {
       this.users = res;
       this.loginData = data;

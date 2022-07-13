@@ -27,7 +27,32 @@
       "number": "8888839562",
       "gender": "female",
       "role": "user",
-      "bookIssued": [],
+      "bookIssued": [
+        {
+          "bookName": "The Alchemist",
+          "authorName": "Paulo Coelho",
+          "bookImage": "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg",
+          "bookCategory": "selfhelp",
+          "bookQuantity": 15,
+          "id": 2
+        },
+        {
+          "bookName": "The Great Gatsby",
+          "authorName": "F. Scott Fitgerald",
+          "bookImage": "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg",
+          "bookCategory": "thriller",
+          "bookQuantity": 22,
+          "id": 3
+        },
+        {
+          "bookName": "To Kill a Mockingbird",
+          "authorName": "Harper lee'",
+          "bookImage": "https://images-na.ssl-images-amazon.com/images/I/81gepf1eMqL.jpg",
+          "bookCategory": "motivitational",
+          "bookQuantity": 23,
+          "id": 4
+        }
+      ],
       "id": 3
     },
     {
@@ -57,8 +82,43 @@
       "number": 8899665544,
       "gender": "male",
       "role": "user",
-      "bookIssued": [],
+      "bookIssued": [
+        {
+          "bookName": "The Alchemist",
+          "authorName": "Paulo Coelho",
+          "bookImage": "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg",
+          "bookCategory": "selfhelp",
+          "bookQuantity": 15,
+          "id": 2
+        },
+        {
+          "bookName": "The Great Gatsby",
+          "authorName": "F. Scott Fitgerald",
+          "bookImage": "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg",
+          "bookCategory": "thriller",
+          "bookQuantity": 22,
+          "id": 3
+        },
+        {
+          "bookName": "To Kill a Mockingbird",
+          "authorName": "Harper lee'",
+          "bookImage": "https://images-na.ssl-images-amazon.com/images/I/81gepf1eMqL.jpg",
+          "bookCategory": "motivitational",
+          "bookQuantity": 23,
+          "id": 4
+        }
+      ],
       "id": 6
+    },
+    {
+      "UserName": "Shivam",
+      "emailId": "sh@gmail.com",
+      "password": "123456",
+      "number": 8855223366,
+      "gender": "male",
+      "role": "user",
+      "bookIssued": null,
+      "id": 7
     }
   ],
   "books": [

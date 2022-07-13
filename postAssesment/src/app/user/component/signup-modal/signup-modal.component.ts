@@ -22,7 +22,7 @@ export class SignupModalComponent implements OnInit {
       number:['',Validators.required],
       gender:['',Validators.required],
       role:['user'],
-      bookIssued:[[]]
+      bookIssued:[]
     }) 
     
   }
@@ -38,7 +38,7 @@ export class SignupModalComponent implements OnInit {
           alert('Error! Fill all details')
         }
       })
-      console.log(this.userForm.value)
+      // console.log(this.userForm.value)
     }
   }
 
@@ -46,7 +46,7 @@ export class SignupModalComponent implements OnInit {
     const dialogRef = this.dialog.open(LoginModalComponent);
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      // console.log(`Dialog result: ${result}`);
     });
   }
 
