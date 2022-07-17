@@ -1,0 +1,17 @@
+<app-navbar>
+    <app-user-info-dropdown>
+        <button mat-menu-item routerLink="/userRequestedBook">My Book</button>
+    </app-user-info-dropdown>
+</app-navbar>
+<mat-card class="searchDiv">
+    <input
+      type="text"
+      name="search"
+      [(ngModel)]="search"
+      placeholder="Search Your Book"
+      style="margin-top: 50px; width: 350px"
+    />
+</mat-card>
+<mat-card>
+    <app-book-card [bookData]="bookData" [searchTerm]="search" ></app-book-card>
+</mat-card>
