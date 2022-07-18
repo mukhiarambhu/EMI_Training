@@ -9,12 +9,12 @@ import { UserListComponent } from './admin/component/user-list/user-list.compone
 import { HomepageComponent } from './shared/component/homepage/homepage.component';
 import { UserLandingPageComponent } from './user/component/user-landing-page/user-landing-page.component';
 import { UserRequestedBookComponent } from './user/component/user-requested-book/user-requested-book.component';
-
+import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'user', component: UserLandingPageComponent, children: [] },
-  { path: 'userRequestedBook', component: UserRequestedBookComponent },
-  { path: 'admin', component: AdminHomeComponent,children:[
+  { path: 'user', component: UserLandingPageComponent, children: [] ,canActivate:[AuthGuard]},
+  { path: 'userRequestedBook', component: UserRequestedBookComponent,canActivate:[AuthGuard] },
+  { path: 'admin', component: AdminHomeComponent,canActivate:[AuthGuard],children:[
     {path:'',component:DashboardComponent},
     {path:'totalbooks',component:BookListComponent},
     {path:'issuedbooks',component:IssuedBookListComponent},
